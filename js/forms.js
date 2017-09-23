@@ -344,7 +344,7 @@
             $autocomplete.empty();
             resetCurrentElement();
             oldVal = undefined;
-          };b
+          };
 
           $input.off('blur.autocomplete').on('blur.autocomplete', function() {
             removeAutocomplete();
