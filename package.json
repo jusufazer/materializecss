@@ -1,44 +1,21 @@
 {
-  "_args": [
-    [
-      "materialize-css@0.97.8",
-      "C:\\Workspace\\Projects\\yaplanner"
-    ]
-  ],
-  "_from": "materialize-css@0.97.8",
-  "_id": "materialize-css@0.97.8",
-  "_inBundle": false,
-  "_integrity": "sha1-45ziBWeFsMTpzUhHws3xU+GcR88=",
-  "_location": "/materialize-css",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "materialize-css@0.97.8",
-    "name": "materialize-css",
-    "escapedName": "materialize-css",
-    "rawSpec": "0.97.8",
-    "saveSpec": null,
-    "fetchSpec": "0.97.8"
-  },
-  "_requiredBy": [
-    "#DEV:/"
-  ],
-  "_resolved": "https://registry.npmjs.org/materialize-css/-/materialize-css-0.97.8.tgz",
-  "_spec": "0.97.8",
-  "_where": "C:\\Workspace\\Projects\\yaplanner",
-  "author": {
-    "name": "Alvin Wang, Alan Chang"
-  },
-  "bugs": {
-    "url": "https://github.com/Dogfalo/materialize/issues"
+  "name": "materialize-css",
+  "description": "Builds Materialize distribution packages",
+  "author": "Alvin Wang, Alan Chang",
+  "url": "http://materializecss.com/",
+  "version": "0.97.7",
+  "main": "bin/materialize.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Dogfalo/materialize.git"
   },
   "dependencies": {
     "hammerjs": "^2.0.4",
     "jquery": "^2.1.4",
-    "node-archiver": "^0.3.0"
+    "node-archiver": "^0.2.0"
   },
-  "description": "Builds Materialize distribution packages",
+  "engine": "node >= 0.10",
   "devDependencies": {
     "autoprefixer": "^6.1.0",
     "grunt": "^0.4.5",
@@ -66,18 +43,7 @@
     "node-sass": "^3.4.2",
     "phantomjs": "^1.9.18"
   },
-  "engine": "node >= 0.10",
-  "homepage": "https://github.com/Dogfalo/materialize#readme",
-  "license": "MIT",
-  "main": "bin/materialize.js",
-  "name": "materialize-css",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Dogfalo/materialize.git"
-  },
   "scripts": {
     "test": "grunt travis --verbose"
-  },
-  "url": "http://materializecss.com/",
-  "version": "0.97.8"
+  }
 }

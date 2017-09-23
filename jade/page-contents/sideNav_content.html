@@ -11,9 +11,7 @@
 
         <ul id="slide-out" class="side-nav">
           <li><div class="userView">
-            <div class="background">
-              <img src="images/office.jpg">
-            </div>
+            <img class="background" src="images/office.jpg">
             <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
             <a href="#!name"><span class="white-text name">John Doe</span></a>
             <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
@@ -29,9 +27,7 @@
         <pre><code class="language-markup col s12">
   &lt;ul id="slide-out" class="side-nav">
     &lt;li>&lt;div class="userView">
-      &lt;div class="background">
-        &lt;img src="images/office.jpg">
-      &lt;/div>
+      &lt;img class="background" src="images/office.jpg">
       &lt;a href="#!user">&lt;img class="circle" src="images/yuna.jpg">&lt;/a>
       &lt;a href="#!name">&lt;span class="white-text name">John Doe&lt;/span>&lt;/a>
       &lt;a href="#!email">&lt;span class="white-text email">jdandturk@gmail.com&lt;/span>&lt;/a>
@@ -64,8 +60,7 @@
   $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 240
       edge: 'right', // Choose the horizontal origin
-      closeOnClick: true, // Closes side-nav on &lt;a> clicks, useful for Angular/Meteor
-      draggable: true // Choose whether you can drag to open on touch screens
+      closeOnClick: true // Closes side-nav on &lt;a> clicks, useful for Angular/Meteor
     }
   );
         </code></pre>
@@ -79,8 +74,6 @@
   $('.button-collapse').sideNav('show');
   // Hide sideNav
   $('.button-collapse').sideNav('hide');
-  // Destroy sideNav
-  $('.button-collapse').sideNav('destroy');
         </code></pre>
       </div>
 
