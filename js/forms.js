@@ -431,6 +431,22 @@
               if (activeIndex >= 0) {
                 $autocomplete.children('li').eq(activeIndex).addClass('active');
               }
+
+              if (activeIndex > 0) {
+                var $activeIndex = $autocomplete.children('li').eq(activeIndex);
+
+                var position = $activeIndex.position().top + $activeIndex.height();
+
+                // navigate forwards
+                if (position > $autocomplete.height()) {
+                  $autocomplete.scrollTop($activeIndex.position().top + $autocomplete.scrollTop());
+                }
+
+                // navigate backwards
+                if (position <= 0) {
+                  $autocomplete.scrollTop($autocomplete.scrollTop() - $autocomplete.height());
+                }
+              }
             }
           });
 
